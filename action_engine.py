@@ -90,6 +90,8 @@ _NTQQ_EMOJI_METADATA: Dict[str, Dict[str, Any]] = {
     "32": {"name": "疑问", "unicode": "❓", "aliases": ["疑问", "问号", "迷惑", "不解", "question", "?", "？", "❓", "❔"]},
     "118": {"name": "抱拳", "unicode": "🤜", "aliases": ["抱拳", "承让", "多谢", "拳", "🤜"]},
     "297": {"name": "拜谢", "unicode": "🙏", "aliases": ["拜谢", "拜托", "祈祷", "求求", "感谢", "双手合十", "保佑", "pray", "please", "🙏"]},
+    "200": {"name": "拜托", "unicode": "🙏", "aliases": ["拜托2", "求饶2"]},
+    "320": {"name": "庆祝", "unicode": "🎉", "aliases": ["庆祝2", "欢庆"]},
     "78": {"name": "握手", "unicode": "🤝", "aliases": ["握手", "合作", "成交", "handshake", "🤝"]},
     "79": {"name": "胜利", "unicode": "✌️", "aliases": ["胜利", "耶", "剪刀手", "victory", "✌️", "✌"]},
     "53": {"name": "蛋糕", "unicode": "🎂", "aliases": ["蛋糕", "生日蛋糕", "生日快乐", "cake", "🎂"]},

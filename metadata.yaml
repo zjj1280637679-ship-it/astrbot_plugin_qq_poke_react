@@ -1,0 +1,33 @@
+name: astrbot_plugin_qq_poke_react
+display_name: QQ 原生戳一戳与表情表态工具箱
+desc: >-
+  直连 NapCat NTQQ 的 OneBot 11 原生动作插件，打造身临其境的拟人化交互。
+  内置高可用动作引擎，支持群聊与私聊的原生戳一戳（friend_poke / group_poke）、消息表情点赞表态（set_msg_emoji_like）、与双向智能表情词典解析；
+  全面封装为 LLM 函数调用工具（poke_user 与 react_to_message），大模型可根据对话语境自主表态、点赞群友优质发言或趣味互动；
+  具备内存级防风控滑动窗口限频器（RateLimiter）与管理员特权放行机制，杜绝腾讯风控风险；
+  提供被动事件监听器，感知机器人被戳通知并执行拟人化延迟反戳（Auto Counter-Poke）与趣味回话，同时支持 /poke 与 /react 便捷命令前缀。
+short_desc: 直连 NapCat NTQQ 的原生群聊/私聊戳一戳、消息表情点赞表态与被戳拟人化反戳插件
+help: >-
+  【指令用法】
+  1. 戳一戳指令：
+     /poke @某人 或 /poke <QQ号> - 原生戳指定群友或好友；
+  2. 表情表态指令：
+     /react <表情名/代码/Emoji> [消息ID] - 引用消息或对指定消息进行表情点赞表态（如 /react 赞、/react 666、/react 玫瑰、/react 124）。
+  【大模型工具 (LLM Tools)】
+  1. poke_user(target_id: str, group_id: str = ""): AI 自主在群聊或私聊中戳特定用户互动；
+  2. react_to_message(message_id: str, emoji_id: str): AI 对当前或指定消息贴上贴切的表态表情（如 点赞、大笑、抱拳、爱心、打脸等）。
+  【拟人化被动互动】
+  当群友或好友戳机器人时，机器人将自动延迟进行反戳并回复（可在后台配置开关与文案）。
+version: "1.0.0"
+author: "zjj1280637679-ship-it"
+repo: "https://github.com/zjj1280637679-ship-it/astrbot_plugin_qq_poke_react"
+astrbot_version: ">=4.16,<5"
+support_platforms:
+  - aiocqhttp
+tags:
+  - 戳一戳
+  - 表情表态
+  - emoji点赞
+  - OneBot11
+  - NapCat
+  - LLM工具

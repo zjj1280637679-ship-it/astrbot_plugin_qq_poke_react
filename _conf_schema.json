@@ -1,0 +1,52 @@
+{
+  "poke_cooldown": {
+    "title": "戳一戳冷却时间 (秒)",
+    "description": "针对同一目标的戳一戳冷却时间（秒），防止高频触发风控",
+    "type": "int",
+    "default": 3,
+    "hint": "单位秒，推荐 2~5 秒",
+    "minimum": 1,
+    "maximum": 30
+  },
+  "react_cooldown": {
+    "title": "表情表态冷却时间 (秒)",
+    "description": "表情点赞表态的冷却时间（秒），避免短时间内对大量消息密集表态",
+    "type": "int",
+    "default": 1,
+    "hint": "单位秒，推荐 1~3 秒",
+    "minimum": 1,
+    "maximum": 10
+  },
+  "auto_counter_poke": {
+    "title": "被戳自动反戳开关",
+    "description": "当机器人自身被群友或好友戳一戳时，是否自动反戳触发者",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后机器人被戳将拟人化反戳对方"
+  },
+  "counter_poke_delay": {
+    "title": "反戳延迟时间 (秒)",
+    "description": "收到戳一戳通知到触发反戳之间的延迟时间（秒），模拟真实人类反应时间",
+    "type": "float",
+    "default": 0.8,
+    "hint": "单位秒，推荐 0.5~1.5 秒",
+    "minimum": 0.1,
+    "maximum": 5.0
+  },
+  "counter_poke_text": {
+    "title": "反戳附带文本",
+    "description": "反戳触发者时附带发送的回复文本（若为空字符串则仅反戳不发文字）",
+    "type": "string",
+    "default": "哼，反戳你一下！",
+    "hint": "若不想发任何文本，可清空此项"
+  },
+  "admins_id": {
+    "title": "管理员 QQ 列表",
+    "description": "拥有免冷却特权及高级管理操作权限的管理员 QQ 列表",
+    "type": "list",
+    "default": [
+      "2973338092"
+    ],
+    "hint": "管理员 QQ 账号列表，具备绕过冷却限频特权"
+  }
+}

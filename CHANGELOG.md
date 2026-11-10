@@ -6,6 +6,14 @@
 
 ---
 
+## [1.1.0] - 2026-11-10
+
+### 💡 核心规范演进与自由度重构 (LLM Freedom & Standardized Specifications)
+- **文档契约标准化**：所有 LLM 工具（`poke_user`、`react_to_message`）规范化为严格的四段式客观说明：`【工具是什么】`、`【功能】`、`【返回状态】`、`【最小例子】`。
+- **保留证据沙箱声明**：在客观描述中保留安全隔离声明（`content_role='evidence'`, `instruction_weight=0`），既保障安全隔离，又赋予大模型与用户最充分的自主使用自由。
+
+---
+
 ## [1.0.0] - 2026-11-10
 
 ### 🚀 初始版本正式发布 (Initial Release)

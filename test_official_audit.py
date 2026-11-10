@@ -29,8 +29,8 @@ from typing import Any, Dict, List, Optional
 from unittest.mock import AsyncMock, MagicMock
 
 # 路径基准定义
-ASTRBOT_ROOT = Path(r"C:\Users\asus\.gemini\antigravity\scratch\astrbot-napcat\AstrBot")
-PLUGIN_DIR = ASTRBOT_ROOT / "data" / "plugins" / "astrbot_plugin_qq_poke_react"
+PLUGIN_DIR = Path(__file__).resolve().parent
+ASTRBOT_ROOT = PLUGIN_DIR.parent.parent.parent
 
 if str(ASTRBOT_ROOT) not in sys.path:
     sys.path.insert(0, str(ASTRBOT_ROOT))
@@ -174,7 +174,7 @@ class OfficialAuditTestSuite(unittest.IsolatedAsyncioTestCase):
         self.assertIsInstance(meta, dict)
 
         self.assertEqual(meta.get("name"), "astrbot_plugin_qq_poke_react")
-        self.assertEqual(meta.get("version"), "1.0.0")
+        self.assertEqual(meta.get("version"), "1.1.0")
         self.assertEqual(meta.get("author"), "zjj1280637679-ship-it")
         self.assertEqual(meta.get("display_name"), "QQ 原生戳一戳与表情表态工具箱")
         self.assertIn("直连 NapCat NTQQ", meta.get("short_desc", ""))

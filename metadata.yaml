@@ -18,7 +18,7 @@ help: >-
   2. react_to_message(message_id: str, emoji_id: str): AI 对当前或指定消息贴上贴切的表态表情（如 点赞、大笑、抱拳、爱心、打脸等）。
   【拟人化被动互动】
   当群友或好友戳机器人时，机器人将自动延迟进行反戳并回复（可在后台配置开关与文案）。
-version: "1.0.0"
+version: "1.1.0"
 author: "zjj1280637679-ship-it"
 repo: "https://github.com/zjj1280637679-ship-it/astrbot_plugin_qq_poke_react"
 astrbot_version: ">=4.16,<5"
